@@ -1,14 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/router"
 import { ROUTES_LINK } from "../../routes";
 import c from "./Style.module.css";
+import Home from "../../assets/home.svg";
 
-const Sidebar = ({ chidren }) => {
+const Sidebar = () => {
 
   const router = useRouter();
-
   return (
     <div className={c.sidebar__container}>
       <div className={c.sidebar__link__wrapper}>
@@ -19,12 +18,11 @@ const Sidebar = ({ chidren }) => {
             href={link}
             key={id}
           >
-            <Image src={icon} alt={title} className={c.icon} />
+            <div className={c.icon}>{icon}</div>
             <p>{title}</p>
           </Link>
         ))}
       </div>
-      <div className={c.pages__container}>{chidren}</div>
     </div>
   );
 };

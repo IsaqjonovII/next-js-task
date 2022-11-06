@@ -13,3 +13,8 @@
   --main-color-text: #BBC2D0;
   --main-color-pink: #FF647C;
 }
+
+.page__container {
+  display: flex;
+  align-items: flex-start;
+}

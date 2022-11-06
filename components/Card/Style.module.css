@@ -1,0 +1,54 @@
+.card__container {
+    border-radius: 10px;
+    background-color: var(--main-color-white);
+    padding: 10px;
+}
+
+.image__container {
+    width: 100%;
+    height: 168px;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 10px;
+    background-color: var(--main-color-gray);
+}
+
+.labels__container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin: 5px 0;
+}
+
+.image__container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product__title, .btn__container {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.btn__container {
+    display: flex;
+    align-items: center;
+}
+
+.price__divided {
+    color: var(--main-color-text);
+    margin-left: 10px;
+}
+
+.card__container > a {
+    color: inherit;
+    text-decoration: none;
+}
+.product__image {
+    width: 100%;
+}
